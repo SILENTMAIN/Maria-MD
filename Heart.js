@@ -468,12 +468,12 @@ const mariafeature = () =>{
     [
         'https://upload.wikimedia.org/wikipedia/commons/e/ef/Youtube_logo.png', // Image URL
         '', // Title
-        `LUFFY YOUTUBE CHANNEL `, // Body message
+        `LUFFY FACEBOOK `, // Body message
         botname, // Footer message
         'Visit', // Button display text
-        'https://youtube.com/@maria-md', // Command (URL in this case)
+        'https://www.facebook.com/profile.php?id=100089667022538', // Command (URL in this case)
         'cta_url', // Button type
-        'https://youtube.com/@maria-md' // URL (used in image generation)
+        'https://www.facebook.com/profile.php?id=100089667022538' // URL (used in image generation)
     ], 
     
     
@@ -598,7 +598,7 @@ const sendSlide = async (jid, title, message, footer, slides) => {
     });
 };
 // Call the function with example parameters
-sendSlide(m.chat, 'MARIA-MD', 'Here the Maria-MD deploy tutorial', botname, slides);
+sendSlide(m.chat, 'Luffy', 'Here the Luffy-md deploy tutorial', botname, slides);
 }
 break
 
@@ -607,16 +607,16 @@ break
             
             case 'stealdp': {
             const user = m.quoted ? m.quoted.sender : text.replace(/[^0-9]/g, '') + '@s.whatsapp.net';
-        if (user === botNumber) return m.reply('_🙅🏻 I can not steal my own profile picture, Darling 🍭_');
-        const {key} = await m.reply("𝒑𝒍𝒆𝒂𝒔𝒆 𝒘𝒂𝒊𝒕 𝑫𝒂𝒓𝒍𝒊𝒏𝒈 🍭");
+        if (user === botNumber) return m.reply('_🙅🏻 I can not steal my own profile picture, Sir 🍭_');
+        const {key} = await m.reply("𝒑𝒍𝒆𝒂𝒔𝒆 𝒘𝒂𝒊𝒕 sir 🍭");
         let picture;
         try {
             picture = await getBuffer(await Maria.profilePictureUrl(user, 'image'));
         } catch (err) {
-            return m.edit(`_❌ @${user.split('@')[0]} Doesn't have a profile picture, or it's hidden.`, key, { mentions: [user] });
+            return m.edit(`_❌ @${user.split('@')[0]} USER Doesn't have a profile picture, or it's hidden😈.`, key, { mentions: [user] });
         }
         Maria.updateProfilePicture(botNumber, picture)
-        .then(() => m.edit('✅ 𝐏𝐫𝐨𝐟𝐢𝐥𝐞 𝐏𝐢𝐜𝐭𝐮𝐫𝐞 𝐒𝐭𝐞𝐚𝐥𝐞𝐝', key))
+        .then(() => m.edit('✅ 𝐏𝐫𝐨𝐟𝐢𝐥𝐞 𝐏𝐢𝐜𝐭𝐮𝐫𝐞 decrypted', key))
         .catch((error) => {
             console.error(error);
             m.edit('Error! try again later', key);
@@ -678,7 +678,7 @@ if (!AntiLinkAll) return reply('Already deactivated')
 let off = ntilinkall.indexOf(from)
 ntilinkall.splice(off, 1)
 fs.writeFileSync('./Gallery/database/antilinkall.json', JSON.stringify(ntilinkall))
-reply('Success in turning off all antilink in this group')
+reply('Success in turning off all antilink in this group💯')
 } else {
   await reply(`Please Type The Option\n\nExample: ${prefix + command} on\nExample: ${prefix + command} off\n\non to enable\noff to disable`)
   }
@@ -713,7 +713,7 @@ reply(`Succes`)
 } else {
 var memeg = await Maria.updateProfilePicture(botNumber, { url: medis })
 fs.unlinkSync(medis)
-reply(`𝑺𝒖𝒄𝒄𝒆𝒔𝒔, 𝑻𝒉𝒂𝒏𝒌 𝒚𝒐𝒖 𝒇𝒐𝒓 𝒕𝒉𝒆 𝒏𝒆𝒘 𝒑𝒓𝒐𝒇𝒊𝒍𝒆 𝒑𝒉𝒐𝒕𝒐, 𝒎𝒚 𝒅𝒂𝒓𝒍𝒊𝒏𝒈 😚`)
+reply(`𝑺𝒖𝒄𝒄𝒆𝒔𝒔, 𝑻𝒉𝒂𝒏𝒌 𝒚𝒐𝒖 𝒇𝒐𝒓 𝒕𝒉𝒆 𝒏𝒆𝒘 𝒑𝒓𝒐𝒇𝒊𝒍𝒆 𝒑𝒉𝒐𝒕𝒐, Boss 😊`)
 }
 }
 break;
@@ -1021,7 +1021,7 @@ break;
                         contextInfo: {
                             externalAdReply: {
                                 showAdAttribution: true,
-                                title: ' *🎐Maria Broadcast🎐* ',
+                                title: ' *🎐Luffy Broadcast🎐* ',
                                 body: `Sent ${i.length} Group`,
                                 thumbnailUrl: 'https://telegra.ph/file/3fd18ee11521117c7c882.jpg',
                                 sourceUrl: global.link,
@@ -1283,7 +1283,7 @@ case 'tag': case 'tagall': case 'all':{
           let response = await Maria.groupInviteCode(m.chat);
           Maria.sendText(
             m.sender,
-            ` 🤖𝐵𝑜𝑡 𝑛𝑎𝑚𝑒:- Maria Bot\n\n🔖𝐺𝑟𝑜𝑢𝑝 𝑛𝑎𝑚𝑒:- ${groupMetadata.subject}\n\n🔰𝐺𝑟𝑜𝑢𝑝 𝑙𝑖𝑛𝑘:- https://chat.whatsapp.com/${response}`,
+            ` 🤖𝐵𝑜𝑡 𝑛𝑎𝑚𝑒:- Luffy Bot\n\n🔖𝐺𝑟𝑜𝑢𝑝 𝑛𝑎𝑚𝑒:- ${groupMetadata.subject}\n\n🔰𝐺𝑟𝑜𝑢𝑝 𝑙𝑖𝑛𝑘:- https://chat.whatsapp.com/${response}`,
             m,
             { detectLink: true }
           );
@@ -1305,19 +1305,19 @@ case 'tag': case 'tagall': case 'all':{
             
             case "sc": case "script": case"repo": {
 const axios = require("axios");
-let repoInfo = await axios.get("https://api.github.com/repos/AYUSH-PANDEY023/Maria-MD");
+let repoInfo = await axios.get("i know you need the bot script so contact my owner");
         let repo = repoInfo.data;
         console.log(repo);
 
    const scritxt = `*🚀𝑴𝒂𝒓𝒊𝒂-𝑩𝒐𝒕-𝑺𝒄𝒓𝒊𝒑𝒕🚀*\n
-  *🌟Creator:* 𝑨𝒚𝒖𝒔𝒉 𝒑𝒂𝒏𝒅𝒆𝒚\n
+  *🌟Creator:*  silent\n
   *🌟 Repo:* ${repo.html_url}\n
   *🌟 Total Forks:* ${repo.forks_count}\n
   *⭐ Total Stars:* ${repo.stargazers_count}\n
   *📁 Repo Size:* ${(repo.size/1024).toFixed(2)} MB\n
   *📅 Last Updated:* ${repo.updated_at}\n
  
-©️ *Ayush Bots inc* 
+©️ *SilentBots inc* 
 *❝ Dont forget to give a Star ⭐ to the repo.*`
 
         Maria.sendMessage(from, { video: { url: 'https://media.tenor.com/Zco-fadJri4AAAPo/code-matrix.mp4' }, gifPlayback: true, caption: scritxt }, { quoted: m })
@@ -1330,7 +1330,7 @@ let repoInfo = await axios.get("https://api.github.com/repos/AYUSH-PANDEY023/Mar
                                 case 'sticker':
             case 'stiker':
             case 's': {
-                if (!quoted) return reply(` Reply to Video/Image with Caption ${prefix + command} darling`)
+                if (!quoted) return reply(` Reply to Video/Image with Caption ${prefix + command} please`)
                 if (/image/.test(mime)) {
                     let media = await quoted.download()
                     let encmedia = await Maria.sendImageAsSticker(m.chat, media, m, {
@@ -1347,7 +1347,7 @@ let repoInfo = await axios.get("https://api.github.com/repos/AYUSH-PANDEY023/Mar
                     })
                     await fs.unlinkSync(encmedia)
                 } else {
-                    return reply(` 🍭𝑹𝒆𝒑𝒍𝒚 𝒕𝒐 𝑽𝒊𝒅𝒆𝒐/𝑰𝒎𝒂𝒈𝒆 𝑾𝒊𝒕𝒉 𝑪𝒂𝒑𝒕𝒊𝒐𝒏 ${prefix + command} 𝒅𝒂𝒓𝒍𝒊𝒏𝒈`)
+                    return reply(` 🍭𝑹𝒆𝒑𝒍𝒚 𝒕𝒐 𝑽𝒊𝒅𝒆𝒐/𝑰𝒎𝒂𝒈𝒆 𝑾𝒊𝒕𝒉 𝑪𝒂𝒑𝒕𝒊𝒐𝒏 ${prefix + command} please`)
                 }
             }
             break;
@@ -1390,7 +1390,7 @@ reply(`Photo/Video?`)
 break;
             case 'toimage':
             case 'toimg': {
-                if (!/webp/.test(mime)) return reply(`🍭𝑹𝒆𝒑𝒍𝒚 𝒔𝒕𝒊𝒄𝒌𝒆𝒓 𝒘𝒊𝒕𝒉 𝒄𝒂𝒑𝒕𝒊𝒐𝒏 ${prefix + command} 𝑫𝒂𝒓𝒍𝒊𝒏𝒈`)
+                if (!/webp/.test(mime)) return reply(`🍭𝑹𝒆𝒑𝒍𝒚 𝒔𝒕𝒊𝒄𝒌𝒆𝒓 𝒘𝒊𝒕𝒉 𝒄𝒂𝒑𝒕𝒊𝒐𝒏 ${prefix + command} sir`)
                 reply(mess.wait)
                 let media = await Maria.downloadAndSaveMediaMessage(qmsg)
                 let ran = await getRandom('.png')
@@ -1410,7 +1410,7 @@ break;
             break;
             case 'tomp4':
             case 'tovideo': {
-                if (!/webp/.test(mime)) return reply(`🍭𝑹𝒆𝒑𝒍𝒚 𝒔𝒕𝒊𝒄𝒌𝒆𝒓 𝒘𝒊𝒕𝒉 𝒄𝒂𝒑𝒕𝒊𝒐𝒏 ${prefix + command} 𝑫𝒂𝒓𝒍𝒊𝒏𝒈`)
+                if (!/webp/.test(mime)) return reply(`🍭𝑹𝒆𝒑𝒍𝒚 𝒔𝒕𝒊𝒄𝒌𝒆𝒓 𝒘𝒊𝒕𝒉 𝒄𝒂𝒑𝒕𝒊𝒐𝒏 ${prefix + command} sir`)
                 reply(mess.wait)
                 let media = await Maria.downloadAndSaveMediaMessage(qmsg)
                 let webpToMp4 = await webp2mp4File(media)
@@ -1427,7 +1427,7 @@ break;
             }
             break;
             case 'checkdeath':
-             if (!text) return replay(`Use Someone's Name, Example : ${prefix + command} Ayush`)
+             if (!text) return replay(`Use Someone's Name, Example : ${prefix + command} silent`)
               predea = await axios.get(`https://api.agify.io/?name=${q}`)
               reply(`Name : ${predea.data.name}\n*Dead At Age :* ${predea.data.age} Year.\n\n_Quick, Quick, Repent Bro, Because No One Knows About Death_`)
               break;
@@ -1645,7 +1645,7 @@ case 'chatgpt':
       case 'chatbot':
        const axios = require("axios");
         if (!args[0]) {
-          return reply(`Please provide a message to chat with the Maria chatbot. Example: ${prefix}chat How are you Maria ?`);
+          return reply(`Please provide a message to chat with the Luffy chatbot. Example: ${prefix}chat How are you Luffy ?`);
         }
 
         const message = encodeURIComponent(args.join(' '));
@@ -1657,7 +1657,7 @@ case 'chatgpt':
           reply(result);
         } catch (error) {
           console.error('Error fetching AI chatbot response:', error);
-          reply('An error occurred while fetching the Maria chatbot response. Please try again later.');
+          reply('An error occurred while fetching the Luffy chatbot response. Please try again later.');
         }
         break;
                
@@ -1682,7 +1682,7 @@ case 'chatgpt':
 /////////////////////////////////////_//////////////
             case "rules":
       
-        const helptxt = `_*📍[Rules for Maria Md usage]📍*_\n\n\n*>>>* use ${prefix}support to get the Official group link in your dm.\n\n*--->* If you want to add Maria-Md in your group the contact the owner by *${prefix}owner/${prefix}mods* \n\n*--->* Dont use wrong command, use the command given in the *${prefix}help* list \n\n* Dont spam the bot with commands if Maria-Md is not responding, its means the maybe owner is offline or facing internet issue. \n\n*IF YOU DONT FOLLOW THE RULES THEN YOU WILL BE BANNED* 🚫 \n\n\n*©️ Ayush Bots inc* `
+        const helptxt = `_*📍[Rules for Luffy Md usage]📍*_\n\n\n*>>>* use ${prefix}support to get the Official group link in your dm.\n\n*--->* If you want to add Luffy-Md in your group the contact the owner by *${prefix}owner/${prefix}mods* \n\n*--->* Dont use wrong command, use the command given in the *${prefix}help* list \n\n* Dont spam the bot with commands if Luffy-Md is not responding, its means the maybe owner is offline or facing internet issue. \n\n*IF YOU DONT FOLLOW THE RULES THEN YOU WILL BE BANNED* 🚫 \n\n\n*©️ Trenz Bots inc* `
 
         Maria.sendMessage(from, { video: { url: 'https://c.tenor.com/geMdtLCXZkAAAAPo/rules.mp4' }, gifPlayback: true, caption: helptxt }, { quoted: m })
 
@@ -1690,16 +1690,16 @@ case 'chatgpt':
       case 'hii': case 'hi': case 'Hi':
        
         
-        let txxt = `*U^I^U ♡* Konichiwa ${pushname} Senpai, I'm MARIA-MD Created by
+        let txxt = `*U^I^U ♡* Konichiwa ${pushname} Senpai, I'm LUFFY-MD Created by
 
- *_Team Ayush_*.`
+ *_Team TRENZALORE_*.`
 
         Maria.sendMessage(m.chat, { image: { url: "https://graph.org/file/eb3821e4d2b0a54dd7ea6.jpg" }, caption: txxt}, { quoted: m });
         
         break;
       case "support":
      
-        let tex = `  [🎀𝙎𝙐𝙋𝙋𝙊𝙍𝙏 𝙂𝙍𝙊𝙐𝙋🎀]\n\n🔖_https://chat.whatsapp.com/FGPKxVnjgJ7KnBGiDeb4ij_`
+        let tex = `  [🎀𝙎𝙐𝙋𝙋𝙊𝙍𝙏 𝙂𝙍𝙊𝙐𝙋🎀]\n\n🔖_https://chat.whatsapp.com/FGPnjgJ7KnBGiDeb4ij_`
 
         await Maria.sendMessage(m.sender,{ video: {url: "https://media.tenor.com/q5Lo2BINkaUAAAPo/beast-tamer-kanade.mp4"}, caption: `${tex}`,gifPlayback: true},);
 
@@ -1716,10 +1716,10 @@ case 'chatgpt':
 \`\`\`A simple and easy-to-use WhatsApp bot project based on Multi-Device Baileys and written in JavaScript\`\`\`
 
 ❁ ══════ ❃•📄 *NOTE* 📄•❃ ══════ ❁
-\`\`\`This bot is a free open source project by THE TEAM AYUSH\`\`\`
+\`\`\`This bot is a free open source project by THE TEAM TRENZ\`\`\`
 
 ❁ ═════ ❃•📑 *GITHUB* 📑•❃ ═════ ❁
-*_LINK:- https://github.com/AYUSH-PANDEY023/Maria-MD_*
+*_LINK:- https://github.com/SILENT042*
 
 
 ❁ ═══ ❃•✍🏻 *CONTRIBUTE* ✍🏻•❃ ═══ ❁
@@ -2170,9 +2170,9 @@ break;
 │⋊ ℙ𝕝𝕒𝕥𝕗𝕠𝕣𝕞: ${os.platform()} 
 │⋊ ℝ𝕦𝕟𝕥𝕚𝕞𝕖: ${runtime(process.uptime())}
 │⋊ 𝕋𝕠𝕥𝕒𝕝𝕔𝕞𝕕: ${mariafeature()}
-│⋊ 𝕆𝕗𝕗𝕚𝕔𝕚𝕒𝕝 𝔾𝕣𝕠𝕦𝕡: https://gg.gg/Maria-support
+│⋊ 𝕆𝕗𝕗𝕚𝕔𝕚𝕒𝕝 𝔾𝕣𝕠𝕦𝕡: https://gg.gg/Luffy-support
 ╰────────────┈平和
- 🎀𝐅𝐨𝐥𝐥𝐨𝐰 𝐨𝐧: https://www.instagram.com/ayushpandeyy_023
+ 🎀𝐅𝐨𝐥𝐥𝐨𝐰 𝐨𝐧: https://www.facebook.com/profile.php?id=100089667022538
 
 Here's the list of my Commands.🔖
  
@@ -2376,11 +2376,11 @@ Here's the list of my Commands.🔖
    },
               {
                  "name": "cta_url",
-                 "buttonParamsJson": "{\"display_text\":\"WhatsApp🚀 \",\"url\":\"https://whatsapp.com/channel/0029VaImo5ZG3R3qjKOdyr1I\",\"merchant_url\":\"https://www.google.com\"}"
+                 "buttonParamsJson": "{\"display_text\":\"WhatsApp🚀 \",\"url\":\"https://whatsapphannel00VaImo5ZG3R3qjKOdyr1I\",\"merchant_url\":\"https://www.google.com\"}"
               },
               {
                  "name": "cta_url",
-                 "buttonParamsJson": "{\"display_text\":\"Youtube 🥵 \",\"url\":\"https://youtube.com/@maria-md\",\"merchant_url\":\"https://www.google.com\"}"
+                 "buttonParamsJson": "{\"display_text\":\"Youtube 🥵 \",\"url\":\"https://youtube.com\",\"merchant_url\":\"https://www.google.com\"}"
               }
 
            ],
@@ -2391,7 +2391,7 @@ Here's the list of my Commands.🔖
                   isForwarded: true,
                 forwardedNewsletterMessageInfo: {
                   newsletterJid: '120363213314329067@newsletter',
-                  newsletterName: "AYUSH BOTZ INC",
+                  newsletterName: "Trenz BOTZ INC",
                   serverMessageId: 143
                 }
                 }
@@ -2575,17 +2575,17 @@ let gmsg = generateWAMessageFromContent(from, {
    },
               {
                  "name": "cta_url",
-                 "buttonParamsJson": "{\"display_text\":\"WhatsApp🚀 \",\"url\":\"https://whatsapp.com/channel/0029VaImo5ZG3R3qjKOdyr1I\",\"merchant_url\":\"https://www.google.com\"}"
+                 "buttonParamsJson": "{\"display_text\":\"WhatsApp🚀 \",\"url\":\"https://whatsapphannel00VaImo5ZG3R3qjKOdyr1I\",\"merchant_url\":\"https://www.google.com\"}"
               },
               {
                  "name": "cta_url",
-                 "buttonParamsJson": "{\"display_text\":\"Youtube 🥵 \",\"url\":\"https://youtube.com/@maria-md\",\"merchant_url\":\"https://www.google.com\"}"
+                 "buttonParamsJson": "{\"display_text\":\"Youtube 🥵 \",\"url\":\"https://youtube.com\",\"merchant_url\":\"https://www.google.com\"}"
               }
 
            ],
           }),
           contextInfo: {
-                  mentionedJid: [m.sender], 
+                  mentionedJid: [m.sender], 1
                   forwardingScore: 999,
                   isForwarded: true,
                 forwardedNewsletterMessageInfo: {
@@ -2645,19 +2645,18 @@ let emsg = generateWAMessageFromContent(from, {
                                {
   "name": "quick_reply",
   "buttonParamsJson": `{"display_text":"Script🎀","id":"${prefix}sc"}`
-   },
+},
               {
                  "name": "cta_url",
-                 "buttonParamsJson": "{\"display_text\":\"WhatsApp🚀 \",\"url\":\"https://whatsapp.com/channel/0029VaImo5ZG3R3qjKOdyr1I\",\"merchant_url\":\"https://www.google.com\"}"
+                 "buttonParamsJson": "{\"display_text\":\"WhatsApp🚀 \",\"url\":\"https://whatsapphannel00VaImo5ZG3R3qjKOdyr1I\",\"merchant_url\":\"https://www.google.com\"}"
               },
               {
                  "name": "cta_url",
-                 "buttonParamsJson": "{\"display_text\":\"Youtube 🥵 \",\"url\":\"https://youtube.com/@maria-md\",\"merchant_url\":\"https://www.google.com\"}"
+                 "buttonParamsJson": "{\"display_text\":\"Youtube 🥵 \",\"url\":\"https://youtube.com\",\"merchant_url\":\"https://www.google.com\"}"
               }
 
-
            ],
-          }),
+          }),,
           contextInfo: {
                   mentionedJid: [m.sender], 
                   forwardingScore: 999,
@@ -2716,19 +2715,7 @@ await Maria.relayMessage(emsg.key.remoteJid, emsg.message, {
                                {
   "name": "quick_reply",
   "buttonParamsJson": `{"display_text":"Script🎀","id":"${prefix}sc"}`
-   },
-              {
-                 "name": "cta_url",
-                 "buttonParamsJson": "{\"display_text\":\"WhatsApp🚀 \",\"url\":\"https://whatsapp.com/channel/0029VaImo5ZG3R3qjKOdyr1I\",\"merchant_url\":\"https://www.google.com\"}"
-              },
-              {
-                 "name": "cta_url",
-                 "buttonParamsJson": "{\"display_text\":\"Youtube 🥵 \",\"url\":\"https://youtube.com/@maria-md\",\"merchant_url\":\"https://www.google.com\"}"
-              }
-
-
-           ],
-          }),
+   
           contextInfo: {
                   mentionedJid: [m.sender], 
                   forwardingScore: 999,
@@ -2751,7 +2738,19 @@ await Maria.relayMessage(cmsg.key.remoteJid, cmsg.message, {
          
    
  case 'ownermenu':
-    const ownermenu = `┌──⊰ _*🧩OWNER🧩*_
+    con}
+              {
+                 "name": "cta_url",
+                 "buttonParamsJson": "{\"display_text\":\"WhatsApp🚀 \",\"url\":\"https://whatsapphannel00VaImo5ZG3R3qjKOdyr1I\",\"merchant_url\":\"https://www.google.com\"}"
+              },
+              {
+                 "name": "cta_url",
+                 "buttonParamsJson": "{\"display_text\":\"Youtube 🥵 \",\"url\":\"https://youtube.com\",\"merchant_url\":\"https://www.google.com\"}"
+              }
+
+           ],
+          })
+	,st ownermenu = `┌──⊰ _*🧩OWNER🧩*_
 │⊳ ♠️ ${prefix}session
 │⊳ ♠️ ${prefix}join
 │⊳ ♠️ ${prefix}mode *[self/public]*
@@ -2803,18 +2802,7 @@ let owmsg = generateWAMessageFromContent(from, {
   "name": "quick_reply",
   "buttonParamsJson": `{"display_text":"Script🎀","id":"${prefix}sc"}`
    },
-              {
-                 "name": "cta_url",
-                 "buttonParamsJson": "{\"display_text\":\"WhatsApp🚀 \",\"url\":\"https://whatsapp.com/channel/0029VaImo5ZG3R3qjKOdyr1I\",\"merchant_url\":\"https://www.google.com\"}"
-              },
-              {
-                 "name": "cta_url",
-                 "buttonParamsJson": "{\"display_text\":\"Youtube 🥵 \",\"url\":\"https://youtube.com/@maria-md\",\"merchant_url\":\"https://www.google.com\"}"
-              }
-
-
-           ],
-          }),
+              
           contextInfo: {
                   mentionedJid: [m.sender], 
                   forwardingScore: 999,
@@ -2827,7 +2815,18 @@ let owmsg = generateWAMessageFromContent(from, {
                 }
         })
     }
-  }
+  },
+              {
+                 "name": "cta_url",
+                 "buttonParamsJson": "{\"display_text\":\"WhatsApp🚀 \",\"url\":\"https://whatsapphannel00VaImo5ZG3R3qjKOdyr1I\",\"merchant_url\":\"https://www.google.com\"}"
+              },
+              {
+                 "name": "cta_url",
+                 "buttonParamsJson": "{\"display_text\":\"Youtube 🥵 \",\"url\":\"https://youtube.com\",\"merchant_url\":\"https://www.google.com\"}"
+              }
+
+           ],
+          }),
 }, {})
 
 await Maria.relayMessage(owmsg.key.remoteJid, owmsg.message, {
@@ -2889,11 +2888,11 @@ await Maria.relayMessage(owmsg.key.remoteJid, owmsg.message, {
    },
               {
                  "name": "cta_url",
-                 "buttonParamsJson": "{\"display_text\":\"WhatsApp🚀 \",\"url\":\"https://whatsapp.com/channel/0029VaImo5ZG3R3qjKOdyr1I\",\"merchant_url\":\"https://www.google.com\"}"
+                 "buttonParamsJson": "{\"display_text\":\"WhatsApp🚀 \",\"url\":\"https://whatsapp.com/channel\",\"merchant_url\":\"https://www.google.com\"}"
               },
               {
                  "name": "cta_url",
-                 "buttonParamsJson": "{\"display_text\":\"Youtube 🥵 \",\"url\":\"https://youtube.com/@maria-md\",\"merchant_url\":\"https://www.google.com\"}"
+                 "buttonParamsJson": "{\"display_text\":\"Youtube 🥵 \",\"url\":\"https://youtube.com/\",\"merchant_url\":\"https://www.google.com\"}"
               }
 
 
@@ -2905,7 +2904,7 @@ await Maria.relayMessage(owmsg.key.remoteJid, owmsg.message, {
                   isForwarded: true,
                 forwardedNewsletterMessageInfo: {
                   newsletterJid: '120363213314329067@newsletter',
-                  newsletterName: "AYUSH BOTZ INC",
+                  newsletterName: "Trenz BOTZ INC",
                   serverMessageId: 143
                 }
                 }
@@ -2978,11 +2977,11 @@ let funmsg = generateWAMessageFromContent(from, {
    },
               {
                  "name": "cta_url",
-                 "buttonParamsJson": "{\"display_text\":\"WhatsApp🚀 \",\"url\":\"https://whatsapp.com/channel/0029VaImo5ZG3R3qjKOdyr1I\",\"merchant_url\":\"https://www.google.com\"}"
+                 "buttonParamsJson": "{\"display_text\":\"WhatsApp🚀 \",\"url\":\"https://whatsapp.com/channel\",\"merchant_url\":\"https://www.google.com\"}"
               },
               {
                  "name": "cta_url",
-                 "buttonParamsJson": "{\"display_text\":\"Youtube 🥵 \",\"url\":\"https://youtube.com/@maria-md\",\"merchant_url\":\"https://www.google.com\"}"
+                 "buttonParamsJson": "{\"display_text\":\"Youtube 🥵 \",\"url\":\"https://youtube.com\",\"merchant_url\":\"https://www.google.com\"}"
               }
 
 
@@ -2994,7 +2993,7 @@ let funmsg = generateWAMessageFromContent(from, {
                   isForwarded: true,
                 forwardedNewsletterMessageInfo: {
                   newsletterJid: '120363213314329067@newsletter',
-                  newsletterName: "AYUSH BOTZ INC",
+                  newsletterName: "Trenz BOTZ INC",
                   serverMessageId: 143
                 }
                 }
@@ -3057,11 +3056,11 @@ let dowmsg = generateWAMessageFromContent(from, {
    },
               {
                  "name": "cta_url",
-                 "buttonParamsJson": "{\"display_text\":\"WhatsApp🚀 \",\"url\":\"https://whatsapp.com/channel/0029VaImo5ZG3R3qjKOdyr1I\",\"merchant_url\":\"https://www.google.com\"}"
+                 "buttonParamsJson": "{\"display_text\":\"WhatsApp🚀 \",\"url\":\"https://whatsapp\",\"merchant_url\":\"https://www.google.com\"}"
               },
               {
                  "name": "cta_url",
-                 "buttonParamsJson": "{\"display_text\":\"Youtube 🥵 \",\"url\":\"https://youtube.com/@maria-md\",\"merchant_url\":\"https://www.google.com\"}"
+                 "buttonParamsJson": "{\"display_text\":\"Youtube 🥵 \",\"url\":\"https://youtube.com\",\"merchant_url\":\"https://www.google.com\"}"
               }
 
 
@@ -3073,7 +3072,7 @@ let dowmsg = generateWAMessageFromContent(from, {
                   isForwarded: true,
                 forwardedNewsletterMessageInfo: {
                   newsletterJid: '120363213314329067@newsletter',
-                  newsletterName: "AYUSH BOTZ INC",
+                  newsletterName: "Trenz BOTZ INC",
                   serverMessageId: 143
                 }
                 }
@@ -3129,11 +3128,11 @@ let wallmsg = generateWAMessageFromContent(from, {
    },
               {
                  "name": "cta_url",
-                 "buttonParamsJson": "{\"display_text\":\"WhatsApp🚀 \",\"url\":\"https://whatsapp.com/channel/0029VaImo5ZG3R3qjKOdyr1I\",\"merchant_url\":\"https://www.google.com\"}"
+                 "buttonParamsJson": "{\"display_text\":\"WhatsApp🚀 \",\"url\":\"https://whatsapp.com/channel\",\"merchant_url\":\"https://www.google.com\"}"
               },
               {
                  "name": "cta_url",
-                 "buttonParamsJson": "{\"display_text\":\"Youtube 🥵 \",\"url\":\"https://youtube.com/@maria-md\",\"merchant_url\":\"https://www.google.com\"}"
+                 "buttonParamsJson": "{\"display_text\":\"Youtube 🥵 \",\"url\":\"https://youtube.com\",\"merchant_url\":\"https://www.google.com\"}"
               }
 
            ],
@@ -3144,7 +3143,7 @@ let wallmsg = generateWAMessageFromContent(from, {
                   isForwarded: true,
                 forwardedNewsletterMessageInfo: {
                   newsletterJid: '120363213314329067@newsletter',
-                  newsletterName: "AYUSH BOTZ INC",
+                  newsletterName: "Trenz BOTZ INC",
                   serverMessageId: 143
                 }
                 }
@@ -3210,11 +3209,11 @@ await Maria.relayMessage(wallmsg.key.remoteJid, wallmsg.message, {
    },
               {
                  "name": "cta_url",
-                 "buttonParamsJson": "{\"display_text\":\"WhatsApp🚀 \",\"url\":\"https://whatsapp.com/channel/0029VaImo5ZG3R3qjKOdyr1I\",\"merchant_url\":\"https://www.google.com\"}"
+                 "buttonParamsJson": "{\"display_text\":\"WhatsApp🚀 \",\"url\":\"https://whatsapp.com/c\",\"merchant_url\":\"https://www.google.com\"}"
               },
               {
                  "name": "cta_url",
-                 "buttonParamsJson": "{\"display_text\":\"Youtube 🥵 \",\"url\":\"https://youtube.com/@maria-md\",\"merchant_url\":\"https://www.google.com\"}"
+                 "buttonParamsJson": "{\"display_text\":\"Youtube 🥵 \",\"url\":\"https://youtube.com\",\"merchant_url\":\"https://www.google.com\"}"
               }
 
            ],
@@ -3225,7 +3224,7 @@ contextInfo: {
                   isForwarded: true,
                 forwardedNewsletterMessageInfo: {
                   newsletterJid: '120363213314329067@newsletter',
-                  newsletterName: "AYUSH BOTZ INC",
+                  newsletterName: "Trenz BOTZ INC",
                   serverMessageId: 143
                 }
                 }
@@ -3300,11 +3299,11 @@ let othmsg = generateWAMessageFromContent(from, {
    },
               {
                  "name": "cta_url",
-                 "buttonParamsJson": "{\"display_text\":\"WhatsApp🚀 \",\"url\":\"https://whatsapp.com/channel/0029VaImo5ZG3R3qjKOdyr1I\",\"merchant_url\":\"https://www.google.com\"}"
+                 "buttonParamsJson": "{\"display_text\":\"WhatsApp🚀 \",\"url\":\"https://whatsapp.com/channel\",\"merchant_url\":\"https://www.google.com\"}"
               },
               {
                  "name": "cta_url",
-                 "buttonParamsJson": "{\"display_text\":\"Youtube 🥵 \",\"url\":\"https://youtube.com/@maria-md\",\"merchant_url\":\"https://www.google.com\"}"
+                 "buttonParamsJson": "{\"display_text\":\"Youtube 🥵 \",\"url\":\"https://youtube.com\",\"merchant_url\":\"https://www.google.com\"}"
               }
 
            ],
@@ -3315,7 +3314,7 @@ let othmsg = generateWAMessageFromContent(from, {
                   isForwarded: true,
                 forwardedNewsletterMessageInfo: {
                   newsletterJid: '120363213314329067@newsletter',
-                  newsletterName: "AYUSH BOTZ INC",
+                  newsletterName: "Trenz BOTZ INC",
                   serverMessageId: 143
                 }
                 }
@@ -3376,11 +3375,11 @@ await Maria.relayMessage(othmsg.key.remoteJid, othmsg.message, {
    },
               {
                  "name": "cta_url",
-                 "buttonParamsJson": "{\"display_text\":\"WhatsApp🚀 \",\"url\":\"https://whatsapp.com/channel/0029VaImo5ZG3R3qjKOdyr1I\",\"merchant_url\":\"https://www.google.com\"}"
+                 "buttonParamsJson": "{\"display_text\":\"WhatsApp🚀 \",\"url\":\"https://whatsapp.com/channel\",\"merchant_url\":\"https://www.google.com\"}"
               },
               {
                  "name": "cta_url",
-                 "buttonParamsJson": "{\"display_text\":\"Youtube 🥵 \",\"url\":\"https://youtube.com/@maria-md\",\"merchant_url\":\"https://www.google.com\"}"
+                 "buttonParamsJson": "{\"display_text\":\"Youtube 🥵 \",\"url\":\"https://youtube.com\",\"merchant_url\":\"https://www.google.com\"}"
               }
 
            ],
@@ -3391,7 +3390,7 @@ await Maria.relayMessage(othmsg.key.remoteJid, othmsg.message, {
                   isForwarded: true,
                 forwardedNewsletterMessageInfo: {
                   newsletterJid: '120363213314329067@newsletter',
-                  newsletterName: "AYUSH BOTZ INC",
+                  newsletterName: "TRENZ BOTZ INC",
                   serverMessageId: 143
                 }
                 }
@@ -3413,8 +3412,8 @@ await Maria.relayMessage(gamemsg.key.remoteJid, gamemsg.message, {
 ┃ *👨‍✈️ Creator:* ${ownername}
 ┃ *💻 RUNTIME:* ${runtime(process.uptime())}
 ┃ *📅 TODAY:* ${Ayuxxdate}
-┃ *💠 Github:* https://github.com/AYUSH-PANDEY023/Maria-MD
-┃ *💬MESSAGE:* 𝙔𝙀𝙎! 𝙄 𝘼𝙈 𝘼𝙇𝙄𝙑𝙀 𝘽𝘼𝘽𝙔😚!!
+┃ *💠 Github:* https://github.com
+┃ *💬MESSAGE:* 𝙔𝙀𝙎! 𝙄 𝘼𝙈 𝘼𝙇𝙄𝙑𝙀😚!!
 ┗━━━━━━━━━━━━━━━᯽
 _Please Select Button Below_
 `  
@@ -3464,11 +3463,11 @@ let msg = generateWAMessageFromContent(from, {
    },
                  {
                  "name": "cta_url",
-                 "buttonParamsJson": "{\"display_text\":\"Deployment Tutorial 📺\",\"url\":\"https://youtu.be/bX6oGRiFs9A?si=HSgTLqWvS65nn-R1\",\"merchant_url\":\"https://www.google.com\"}"
+                 "buttonParamsJson": "{\"display_text\":\"Deployment Tutorial 📺\",\"url\":\"https://youtu.be/?si=HSgTLqWvS65nn-R1\",\"merchant_url\":\"https://www.google.com\"}"
               },          
               {
                  "name": "cta_url",
-                 "buttonParamsJson": "{\"display_text\":\"WhatsApp🚀\",\"url\":\"https://whatsapp.com/channel/0029VaImo5ZG3R3qjKOdyr1I\",\"merchant_url\":\"https://www.google.com\"}"
+                 "buttonParamsJson": "{\"display_text\":\"WhatsApp🚀\",\"url\":\"https://whatsapp.com/channel\",\"merchant_url\":\"https://www.google.com\"}"
               }                      
            ],
           }),
@@ -3570,7 +3569,7 @@ let liistmsg = generateWAMessageFromContent(from, {
    },
               {
                  "name": "cta_url",
-                 "buttonParamsJson": "{\"display_text\":\"WHATSAPP 🚀\",\"url\":\"https://whatsapp.com/channel/0029VaImo5ZG3R3qjKOdyr1I\",\"merchant_url\":\"https://www.google.com\"}"
+                 "buttonParamsJson": "{\"display_text\":\"WHATSAPP 🚀\",\"url\":\"https://whatsapp.com/channel\",\"merchant_url\":\"https://www.google.com\"}"
               }                      
            ],
           }),
@@ -3580,7 +3579,7 @@ let liistmsg = generateWAMessageFromContent(from, {
                   isForwarded: true,
                 forwardedNewsletterMessageInfo: {
                   newsletterJid: '120363213314329067@newsletter',
-                  newsletterName: "AYUSH BOTZ INC",
+                  newsletterName: "Trenz BOTZ INC",
                   serverMessageId: 143
                 }
                 }
@@ -3919,7 +3918,7 @@ case 'doraemon': {
             }),
             header: proto.Message.InteractiveMessage.Header.create({
               ...mediaData,
-              title: 'Check out this Doraemon wallpaper! 🤖✨\n\n© Ayush Botz.Inc',
+              title: 'Check out this Doraemon wallpaper! 🤖✨\n\n© Trenz Botz.Inc',
               subtitle: themeemoji,
               hasMediaAttachment: true
             }),
@@ -3978,7 +3977,7 @@ case 'pokemon': {
             }),
             header: proto.Message.InteractiveMessage.Header.create({
               ...mediaData,
-              title: 'Here is a Pokemon wallpaper for you! ⚡🔥\n\n© Ayush Botz.Inc',
+              title: 'Here is a Pokemon wallpaper for you! ⚡🔥\n\n© Trenz Botz.Inc',
               subtitle: themeemoji,
               hasMediaAttachment: true
             }),
@@ -4038,7 +4037,7 @@ case 'zero-two': {
             }),
             header: proto.Message.InteractiveMessage.Header.create({
               ...mediaData,
-              title: 'Enjoy this Zero-Two wallpaper! ❤️🖤\n\n© Ayush Botz.Inc',
+              title: 'Enjoy this Zero-Two wallpaper! ❤️🖤\n\n© Trenz Botz.Inc',
               subtitle: themeemoji,
               hasMediaAttachment: true
             }),
@@ -4504,17 +4503,17 @@ case 'ping':
 case 'developer':
 case 'dev':
     const devmod = `  🍥 *Moderators* 🍥\n\n
-*🎫Ayush* @919931122319
+*🎫Trenz* @2348168855791
 
 *🎫xeon* @916909137213
 
-*🎫Pikachu* @918811074852
+*🎫Pikachu* @2349012220986
 
 *🎫OldUser* @918602239106
  \n
-\n📛*Don't Spam them to avoid Blocking !*\n\n For any help, type *${prefix}support* and ask in the group.\n\n*✨️Thanks for using Maria-Md* `;
+\n📛*Don't Spam them to avoid Blocking !*\n\n For any help, type *${prefix}support* and ask in the group.\n\n*✨️Thanks for using LUFFY-Md* `;
 
-    Maria.sendMessage(m.chat, { text: devmod, mentions: ["919931122319@s.whatsapp.net", "918811074852@s.whatsapp.net", "916909137213@s.whatsapp.net","918602239106@s.whatsapp.net"] }, { quoted: m });
+    Maria.sendMessage(m.chat, { text: devmod, mentions: ["2348168855791@s.whatsapp.net", "2348168855791@s.whatsapp.net", "916909137213@s.whatsapp.net","918602239106@s.whatsapp.net"] }, { quoted: m });
     break;
 
 
@@ -4563,11 +4562,11 @@ case 'dice': {
         let resultMessage;
 
         if (playerNumber > mariaNumber) {
-            resultMessage = `🎲 You chose ${playerNumber}! Maria rolled a ${mariaNumber}. 🏆 You win! 🎉`;
+            resultMessage = `🎲 You chose ${playerNumber}! luffy rolled a ${mariaNumber}. 🏆 You win! 🎉`;
         } else if (playerNumber < mariaNumber) {
-            resultMessage = `🎲 You chose ${playerNumber}! Maria rolled a ${mariaNumber}. 😞 You lose! 💔`;
+            resultMessage = `🎲 You chose ${playerNumber}! luffy rolled a ${mariaNumber}. 😞 You lose! 💔`;
         } else {
-            resultMessage = `🎲 You chose ${playerNumber}! Maria rolled a ${mariaNumber}. 🤝 It's a tie! 😅`;
+            resultMessage = `🎲 You chose ${playerNumber}! luffy rolled a ${mariaNumber}. 🤝 It's a tie! 😅`;
         }
 
         caption = `🎲 *Dice Roll Game* 🎲\n`;
@@ -4613,7 +4612,7 @@ case 'poker': {
         if (userScore > mariaScore) {
             resultMessage += `\t\t\uD83C\uDF89 Congratulations! You win! \uD83C\uDF89`;
         } else if (userScore < mariaScore) {
-            resultMessage += `\t\t\uD83D\uDE22 Better luck next time. Maria wins. \uD83D\uDE22`;
+            resultMessage += `\t\t\uD83D\uDE22 Better luck next time. luffy wins. \uD83D\uDE22`;
         } else {
             resultMessage += `\t\t\uD83C\uDF9D It's a tie! \uD83C\uDF9D`;
         }
@@ -4959,10 +4958,10 @@ case "info":
 \`\`\`A simple and easy-to-use WhatsApp bot project based on Multi-Device Baileys and written in JavaScript\`\`\`
 
 ❁ ══════ ❃•📄 *NOTE* 📄•❃ ══════ ❁
-\`\`\`This bot is a free open source project by THE TEAM AYUSH\`\`\`
+\`\`\`This bot is a free open source project by THE TEAM Trenz\`\`\`
 
 ❁ ═════ ❃•📑 *GITHUB* 📑•❃ ═════ ❁
-*_LINK:- https://github.com/AYUSH-PANDEY023/Maria-MD_*
+*_LINK:- https://github.com_*
 
 
 ❁ ═══ ❃•✍🏻 *CONTRIBUTE* ✍🏻•❃ ═══ ❁
@@ -4978,7 +4977,7 @@ Maria.sendMessage(m.chat, { image: { url: "https://graph.org/file/c8ad7dc322c0b9
         let tifx = `*𝚃𝙴𝚁𝙼𝚜 𝙰𝙽𝙳 𝙲𝙾𝙽𝙳𝙸𝚃𝙸𝙾𝙽*\n\n
 ⍟ *────────────────* ⍟ 
 
-📝 Note: Beware of fake Maria-MD bots! People may falsely claim to represent Maria-MD. Please exercise caution.
+📝 Note: Beware of fake Luffy-MD bots! People may falsely claim to represent LUFFY-MD. Please exercise caution.
 
 _Whatsapp Bots have become increasingly popular, but with that comes the risk of encountering fake accounts. Stay vigilant._
 
@@ -4995,10 +4994,10 @@ _We will update the bot's terms and conditions periodically, so it's your respon
 _If you have any questions regarding our terms, please reach out to us._
 _For everything else, use common sense._
 
-*FUTURE IS NOW🚀~MARIA-MD*
-*_🚀Team Ayush_*
+*FUTURE IS NOW🚀~LUFFY-MD*
+*_🚀Team luffy_*
 
-⍟ *────────────────* ⍟`
+⍟ *2348168855791* ⍟`
  let mariajpg= "https://graph.org/file/c8ad7dc322c0b9b7eca8f.jpg" 
  
 let tifxmsg = generateWAMessageFromContent(from, {
@@ -5041,7 +5040,7 @@ let tifxmsg = generateWAMessageFromContent(from, {
                   isForwarded: true,
                 forwardedNewsletterMessageInfo: {
                   newsletterJid: '120363213314329067@newsletter',
-                  newsletterName: "AYUSH BOTZ INC",
+                  newsletterName: "Luffy BOTZ INC",
                   serverMessageId: 143
                 }
                 }
@@ -5076,7 +5075,7 @@ case '': {
             }),
             header: proto.Message.InteractiveMessage.Header.create({
                 ...(await prepareWAMessageMedia({ image : fs.readFileSync(randomImage)}, { upload: Maria.waUploadToServer})), 
-              title: `🍭𝑫𝒂𝒓𝒍𝒊𝒏𝒈 𝑫𝒊𝒅 𝒀𝒐𝒖 𝑴𝒆𝒂𝒏 ${prefix}𝒉𝒆𝒍𝒑`,
+              title: `🍭 𝑫𝒊𝒅 𝒀𝒐𝒖 𝑴𝒆𝒂𝒏 ${prefix}𝒉𝒆𝒍𝒑`,
               subtitle: themeemoji,
               hasMediaAttachment: true
             }),
@@ -5094,7 +5093,7 @@ case '': {
                   isForwarded: true,
                 forwardedNewsletterMessageInfo: {
                   newsletterJid: '120363213314329067@newsletter',
-                  newsletterName: "AYUSH BOTZ INC",
+                  newsletterName: "Trenz BOTZ INC",
                   serverMessageId: 143
                 }
                 }
