@@ -32,7 +32,7 @@ const { download } = require('aptoide-scraper');
 const { fetchBuffer, buffergif } = require("./Gallery/lib/myfunc2")
 
 /////log
- global.modnumber = '919060791616' 
+ global.modnumber = '2348168855791' 
 //Gallery/database
 let ntilinkall =JSON.parse(fs.readFileSync('./Gallery/database/antilink.json'));
 // let autoblck =JSON.parse(fs.readFileSync('./Gallery/database/autoblock.json'));
@@ -45,9 +45,9 @@ let hit = JSON.parse(fs.readFileSync('./Gallery/database/total-hit-user.json'))
 const replay = (teks) => {
             Maria.sendMessage(m.chat, { text: teks}, { quoted: m})
         }
-const xtime = moment.tz('Asia/Kolkata').format('HH:mm:ss')
-        const Ayuxxdate = moment.tz('Asia/Kolkata').format('DD/MM/YYYY')
-        const time2 = moment().tz('Asia/Kolkata').format('HH:mm:ss')  
+const xtime = moment.tz('Africa/Lagos').format('HH:mm:ss')
+        const Ayuxxdate = moment.tz('Africa/Lagos').format('DD/MM/YYYY')
+        const time2 = moment().tz('Africa/Lagos').format('HH:mm:ss')  
          if(time2 < "23:59:00"){
 var Ayushytimewisher = `Good Night 🌌`
  }
@@ -93,7 +93,7 @@ module.exports = Maria = async (Maria, m, msg, chatUpdate, store) => {
 );
         var budy = (typeof m.text == 'string' ? m.text : '')
         
-        const prefix = global.prefa || "."
+        const prefix = global.prefa || ","
         const isCmd = body.startsWith(prefix)
         if (!isCmd || !body.startsWith(prefix)) return;
         const command = body.replace(prefix, '').trim().split(/ +/).shift().toLowerCase()
@@ -182,7 +182,7 @@ mentionedJid:[sender],
 forwardingScore: 9999999,
 isForwarded: true,
 forwardedNewsletterMessageInfo: {
-newsletterName: "AYUSH BOTZ INC",
+newsletterName: "TRENZ BOTZ INC",
 newsletterJid: "120363213314329067@newsletter",
 },
 "externalAdReply": {
@@ -239,7 +239,7 @@ async function Telesticker(url) {
             data2 = await axios(`https://api.telegram.org/bot891038791:AAHWB1dQd-vi0IbH2NjKYUk-hqQ8rQuzPD4/getFile?file_id=${fileId}`)
             result = {
             status: 200,
-            author: '💙𓆩‎✘AʏᴜSʜ✘𓆪_✰',
+            author: '💙𓆩‎✘SILENT✘𓆪_✰',
             url: "https://api.telegram.org/file/bot891038791:AAHWB1dQd-vi0IbH2NjKYUk-hqQ8rQuzPD4/" + data2.data.result.file_path
             }
             mariayresult.push(result)
@@ -281,7 +281,7 @@ async function Telesticker(url) {
         }
         
         if (autobio) {
-            Maria.updateProfileStatus(`Hey, future leaders! 🌟 Maria-Md is here to inspire and lead, thanks to Ayush Botz, Inc. 🚀 ${runtime(process.uptime())} `).catch(_ => _)
+            Maria.updateProfileStatus(`Hey, future leaders! 🌟 LUFFY-MD is here to inspire and lead, thanks to TRENZ Botz, Inc. 🚀 ${runtime(process.uptime())} `).catch(_ => _)
         }
         if (m.sender.startsWith('212') && global.anti212 === true) {
             return Maria.updateBlockStatus(m.sender, 'block')
@@ -430,8 +430,8 @@ return false;
 const verificationBot = await verification();
 
 if (!verificationBot) {
-m.reply(`⛩️ *❯─「 Maria-MD 」─❮* ⛩️\n
-Join our support group to interact with MARIA-MD 🌟 \n\n https://chat.whatsapp.com/FGPKxVnjgJ7KnBGiDeb4ij`);
+m.reply(`⛩️ *❯─「 LUFFY-MD 」─❮* ⛩️\n
+Join our support group to interact with LUFFY-MD 🌟 \n\n https://wa.me/2348168855791`);
 return;
 }
 
@@ -468,7 +468,7 @@ const mariafeature = () =>{
     [
         'https://upload.wikimedia.org/wikipedia/commons/e/ef/Youtube_logo.png', // Image URL
         '', // Title
-        `MARIA YOUTUBE CHANNEL `, // Body message
+        `LUFFY YOUTUBE CHANNEL `, // Body message
         botname, // Footer message
         'Visit', // Button display text
         'https://youtube.com/@maria-md', // Command (URL in this case)
